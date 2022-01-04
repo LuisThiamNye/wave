@@ -1,0 +1,3 @@
+;;
+{:config-paths ["babashka/fs"
+                "com.crypticbutter/snoop"]}
