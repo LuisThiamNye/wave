@@ -1,5 +1,6 @@
 (ns wave.clj.core
   (:require
+   [wave.translate :as translate]
    [wave.clj.compile :as clj.compile]
    [wave.evalctx :as evalctx]))
 

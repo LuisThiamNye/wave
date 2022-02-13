@@ -30,7 +30,7 @@
      :ctx ctx}
     [:vector _ children]
     (let [[ctx children] (compile-exprs ctx children)]
-      {:result [:anon-array {} children]
+      {:result [:array {} children]
        :ctx ctx})
     [:list _ children]
     (eval-special-form ctx cmd args)))
@@ -245,7 +245,7 @@
                   (throw (ex-info (str "Use of unbound symbol " sym) ctx))))))]
     {:ctx ctx
      :result (reduce (fn [acc field]
-                       [:access-field field acc])
+                       [:access field acc])
                      obj
                      fields)}))
 
@@ -265,7 +265,7 @@
      :ctx ctx}
     [:vector _ children]
     (let [[ctx children] (compile-exprs ctx children)]
-      {:result [:anon-array {} children]
+      {:result [:array {} children]
        :ctx ctx})))
 
 (defn eval-forms [ctx forms]

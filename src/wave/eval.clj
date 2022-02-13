@@ -22,7 +22,7 @@
      :ctx ctx}
     [:vector _ children]
     (let [[ctx children] (compile-exprs ctx children)]
-      {:expression [:anon-array {} children]
+      {:expression [:array {} children]
        :ctx ctx})
     [:list _ [cmd & args]]
     (eval-form ctx cmd args)))

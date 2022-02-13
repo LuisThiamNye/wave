@@ -7,7 +7,7 @@
   [:symbol {} 'sym]
   [:raw 'text]
   [:string 'raw]
-  [:anon-array {} 'items*]
+  [:array {} 'items*]
   [:block {:label ""} 'statements+ '?retexpr]
 
   ;; statment

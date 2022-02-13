@@ -5,3 +5,6 @@ target
 *.dylib
 zig-cache
 .cpcache
+/.calva/
+*.exe
+*.pdb

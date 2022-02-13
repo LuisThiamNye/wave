@@ -1,0 +1,4 @@
+;;
+{:tasks {:requires []
+         cider (clojure (str "-A:lib/hotload:dev:inspect/rebl:inspect/reveal-light:middleware/cider-clj")
+                        "-J-Dsnoop.enabled")}}

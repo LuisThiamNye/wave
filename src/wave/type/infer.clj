@@ -33,7 +33,7 @@
       (hike/postwalk-replace subst t'))
     :else t))
 
-(defn generalize
+#_(defn generalize
   [env t]
   (let [variables (vec (fset/difference (free-types t) (free-types env)))]
     (if (pos? (count variables))
@@ -41,7 +41,7 @@
       t)))
 
 (comment
-  (free-variables)
+  ;; (free-variables)
 
   ;; type constants
   '(.

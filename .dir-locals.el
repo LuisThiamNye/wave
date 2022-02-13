@@ -1,2 +1,2 @@
-((clojure-mode . ((cider-clojure-cli-aliases . "lib/hotload:dev:inspect/rebl")
-                  (cider-clojure-cli-global-options . "-J-Dsnoop.enabled"))))
+((clojure-mode . ((cider-clojure-cli-aliases . ":lib/hotload:dev:inspect/rebl:inspect/reveal-light")
+                  (cider-clojure-cli-global-options . "'-J-Dsnoop.enabled'"))))
